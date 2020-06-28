@@ -3,9 +3,13 @@ package com.example.countrypickerkotlin.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.countrypickerkotlin.R
 import com.example.countrypickerkotlin.model.Country
+import com.example.countrypickerkotlin.util.downloadFromUrl
+import com.example.countrypickerkotlin.util.placeHolderProgressBar
+import com.example.countrypickerkotlin.view.FeedFragmentDirections
 import kotlinx.android.synthetic.main.item_country.view.*
 
 class CountryAdapter(val countryList: ArrayList<Country>): RecyclerView.Adapter<CountryAdapter.CountryViewHolder>(){
@@ -28,6 +32,12 @@ class CountryAdapter(val countryList: ArrayList<Country>): RecyclerView.Adapter<
         holder.view.name.text = countryList[position].countryName
         holder.view.region.text = countryList[position].countryRegion
 
+        holder.view.setOnClickListener {
+            val action = FeedFragmentDirections.actionFeedFragmentToCountryFragment()
+            Navigation.findNavController(it).navigate(action)
+        }
+
+        holder.view.imageView.downloadFromUrl(countryList[position].imageUrl, placeHolderProgressBar(holder.view.context))
 
     }
 

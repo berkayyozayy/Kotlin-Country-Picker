@@ -45,6 +45,14 @@ class FeedFragment : Fragment() {
         countryList.layoutManager = LinearLayoutManager(context)
         countryList.adapter = countryAdapter
 
+        swipeRefreshLayout.setOnRefreshListener {
+            countryList.visibility = View.GONE
+            countryError.visibility = View.GONE
+            countryLoading.visibility = View.VISIBLE
+            viewModel.refreshData()
+
+            swipeRefreshLayout.isRefreshing = false
+        }
 
         observeLiveData()
 
@@ -71,10 +79,10 @@ class FeedFragment : Fragment() {
 
         })
 
-        viewModel.countryLoading.observe(viewLifecycleOwner, Observer {loading -> {
+        viewModel.countryLoading.observe(viewLifecycleOwner, Observer {loading ->
 
-            loading?.let{
-                if(it) {
+            loading?.let {
+                if (it) {
                     countryLoading.visibility = View.VISIBLE
                     countryList.visibility = View.GONE
                     countryError.visibility = View.GONE
@@ -82,7 +90,9 @@ class FeedFragment : Fragment() {
                     countryLoading.visibility = View.GONE
                 }
             }
-        }
+
+
+
 
         })
 
