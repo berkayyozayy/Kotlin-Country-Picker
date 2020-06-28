@@ -1,6 +1,7 @@
 package com.example.countrypickerkotlin.service
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -29,6 +30,9 @@ abstract class CountryDatabase : RoomDatabase() {
         ).build()
     }
 
+=======
+class CountryDatabase {
+>>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d
 =======
 class CountryDatabase {
 >>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d

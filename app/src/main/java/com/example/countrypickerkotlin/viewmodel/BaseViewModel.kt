@@ -1,6 +1,7 @@
 package com.example.countrypickerkotlin.viewmodel
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -22,6 +23,9 @@ abstract class BaseViewModel(application: Application) : AndroidViewModel(applic
         job.cancel()
     }
 
+=======
+class BaseViewModel {
+>>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d
 =======
 class BaseViewModel {
 >>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d

@@ -1,6 +1,7 @@
 package com.example.countrypickerkotlin.service
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.example.countrypickerkotlin.model.Country
 import io.reactivex.Single
 import retrofit2.http.GET
@@ -14,6 +15,9 @@ interface CountryAPI {
     @GET("atilsamancioglu/IA19-DataSetCountries/master/countrydataset.json")
     fun getCountries(): Single<List<Country>>
 
+=======
+interface CountryAPI {
+>>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d
 =======
 interface CountryAPI {
 >>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d

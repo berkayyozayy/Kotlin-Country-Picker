@@ -1,6 +1,7 @@
 package com.example.countrypickerkotlin.service
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.example.countrypickerkotlin.model.Country
 import io.reactivex.Single
 import retrofit2.Retrofit
@@ -25,6 +26,9 @@ class CountryAPIService {
     }
 
 
+=======
+class CountryAPIService {
+>>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d
 =======
 class CountryAPIService {
 >>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d
