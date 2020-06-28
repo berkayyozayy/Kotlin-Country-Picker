@@ -21,8 +21,6 @@ class FeedFragment : Fragment() {
     private lateinit var viewModel : FeedViewModel
     private val countryAdapter = CountryAdapter(arrayListOf())
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -49,7 +47,7 @@ class FeedFragment : Fragment() {
             countryList.visibility = View.GONE
             countryError.visibility = View.GONE
             countryLoading.visibility = View.VISIBLE
-            viewModel.refreshData()
+            viewModel.refreshFromAPI()
 
             swipeRefreshLayout.isRefreshing = false
         }
@@ -90,10 +88,6 @@ class FeedFragment : Fragment() {
                     countryLoading.visibility = View.GONE
                 }
             }
-
-
-
-
         })
 
 
