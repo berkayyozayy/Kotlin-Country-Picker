@@ -1,7 +1,6 @@
 package com.example.countrypickerkotlin.service
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -29,10 +28,5 @@ interface CountryDao {
 
     @Query("DELETE FROM country")
     suspend fun deleteAllCountries()
-=======
-interface CountryDAO {
->>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d
-=======
-interface CountryDAO {
->>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d
+
 }

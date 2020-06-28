@@ -1,7 +1,6 @@
 package com.example.countrypickerkotlin.util
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import android.content.Context
 import android.widget.ImageView
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
@@ -30,7 +29,3 @@ fun placeHolderProgressBar(context: Context) : CircularProgressDrawable {
         start()
     }
 }
-=======
->>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d
-=======
->>>>>>> e02edee9194445f72a80a5a6764f17bb88a0997d
