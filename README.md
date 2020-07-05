@@ -8,6 +8,7 @@ Application can receive data from an API with Retrofit.
 3) Gson - Retrofit
 4) LiveData
 5) Data Binding
+6) ViewModel
 6) Kotlin Extensions
 7) Kotlin Coroutines
 
